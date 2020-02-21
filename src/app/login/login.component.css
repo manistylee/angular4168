@@ -1,0 +1,49 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-container > * {
+    width: 40%;
+    margin: 0 auto;
+ }
+
+ .title-center {
+    margin: 0 auto;
+  }
+
+  .mat-form-field {
+    display: block;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  td.mat-cell, td.mat-footer-cell, th.mat-header-cell {
+    text-align: center;
+  }
+
+
+  .maincontainer {
+    width: 50%;
+    margin: 0 auto;
+    height:300px;
+    background-color: azure;
+    
+  }
+
+  .maincontainer .mainpage{
+    border: 2px solid #dddddd;
+    padding: 50px;
+    margin: 8px;
+    display: inline-block;
+  }
+
+  .maincontainer .exit{
+    border: 2px solid #dddddd;
+    padding: 8px;
+    margin: 8px;
+    float:right;
+    display: inline-block;
+  }

@@ -1,0 +1,26 @@
+<div class="maincontainer" *ngIf="login">
+        <a class="mainpage" routerLink="static" routerLinkActive="active">Static data</a>
+        <a class="mainpage" routerLink="market" routerLinkActive="active">Market data</a>
+        <a class="mainpage" routerLink="trading" routerLinkActive="active">Trading book</a>
+        <button class="exit" (click)="onLogout()" >Exit/Logout</button>
+</div>
+
+<div class="login-container" *ngIf="!login">
+    <form class="login-form" (submit)="onLogin(loginform)" #loginform="ngForm">
+        <mat-form-field>
+        <input matInput placeholder="User Name" ngModel name="username" #title="ngModel" required>
+        <mat-error *ngIf="title.invalid">Please enter user name</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+        <input matInput placeholder="Enter your password" type="password" ngModel name="password" required>
+        <mat-error *ngIf="title.invalid">Please enter password</mat-error>   
+        </mat-form-field>
+
+        <button mat-raised-button color="accent" type="submit">Login</button>
+    
+    </form>
+<p>username:demo, password:demo</p>
+        
+</div>
+

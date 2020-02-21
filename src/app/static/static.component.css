@@ -1,0 +1,22 @@
+.maincontainer {
+    width: 50%;
+    margin: 0 auto;
+    background-color: azure;
+    border: 5px solid #dddddd;
+    
+  }
+
+.maincontainer .mainpage{
+    border: 2px solid #dddddd;
+    padding: 20px;
+    margin: 15px;
+    display: inline-block;
+  }
+
+  .maincontainer .exit{
+    border: 2px solid #dddddd;
+    padding: 8px;
+    margin: 8px;
+    float:right;
+    display: inline-block;
+  }
